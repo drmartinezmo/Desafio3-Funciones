@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafío 3 - Funciones - 4_colores</title>
+    <style>
+        body {
+            font-size: larger;
+        }
+        #key1 {
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+        }
+        #key2 {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+
+        }
+        #key3{
+            width: 200px;
+            height: 200px;
+            background-color: green;
+        }
+        #key4 {
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+        }
+
+        .main {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <p><div id="key1"></div></p>
+        <p><div id="key2"></div></p>
+        <p><div id="key3"></div></p>
+        <p><div id="key4"></div></p>
+    </div>
+
+    <!-- script -->
+    <script>
+        const color = 'black';
+        const pintar = (id) => {
+            document.getElementById(id).style.backgroundColor = color;
+            };
+
+        document.addEventListener('click', (event) => {
+            pintar(event.target.id);
+            });
+    </script>
+</body>
+</html>
